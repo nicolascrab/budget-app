@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Budget App</title>
+</head>
+<body>
+	<main>
+		<h1>Budget App</h1>	
+		<div class="form_flex">
+			<!--Date-->
+			<div class="form_input-flex">
+				<div class="form_label-wrapper">
+					<label for="event-date">Date</label>
+					<button class="form_custom-checkbox" data-js="todayBtn">Today</button>
+					<button class="form_custom-checkbox" data-js="yesterdayBtn">Yesterday</button>
+				</div>
+				<input class="form_input" type="date" id="date" name="Date">
+			</div>
+			<!--Description-->
+			<div class="form_input-flex">
+				<div class="form_label-wrapper">
+					<label for="event-date">Description</label>
+					<button class="form_custom-checkbox" data-js="sparBtn">Spar</button>
+					<button class="form_custom-checkbox" data-js="lidlBtn">Lidl</button>
+				</div>
+				<input class="form_input" type="text" id="description" name="Description" placeholder="Tap to enter a description">
+			</div>
+			<!--Amount-->
+			<div class="form_input-flex">
+				<div class="form_label-wrapper">
+					<label for="event-date">Amount</label>
+				</div>
+				<input class="form_input" type="number" id="amount" name="Amount" inputmode="decimal" placeholder="Tap to enter an amount">
+			</div>
+			<!--Categories-->
+			<div class="form_input-flex">
+				<div class="form_label-wrapper">
+					<label for="category-select">Category</label>
+				</div>
+				<select id="category-select" name="categorySelection">
+					<option value="">Tap to select a category</option>
+					<optgroup label="Revenues">
+						<option value="sales">Revenue</option>
+						<option value="service_fees">Service Fees</option>
+						<option value="subscriptions">Subscriptions</option>
+					</optgroup>
+					<optgroup label="Income">
+						<option value="interest">Income</option>
+						<option value="dividends">Dividends</option>
+						<option value="rent">Rental Income</option>
+					</optgroup>
+				</select>
+			</div>
+			<button class="button" type="submit">Submit</button>
+		</div>
+	</main>
+</body>
+</html>

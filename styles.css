@@ -1,0 +1,130 @@
+/* Universal Box-Sizing for easier layout calculations */
+html {
+  box-sizing: border-box;
+  color: #1a1a1a;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Basic Reset for common elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; /* Improves readability */
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/*MOBILE-FIRST STYLES*/
+main {
+  padding: 2rem 1rem;
+}
+
+input, 
+select {
+  border-radius: 4px;
+  border: 1px solid #D4D4D4;
+  padding: 0.5rem;
+}
+
+.form_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 1.5rem;
+}
+
+.form_input-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.form_label-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+
+.form_custom-checkbox {
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 999px;
+  padding: 0.25rem 1.5rem;
+  font-size: 0.75em;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  background-color: #A9D5ED;
+  color: #333;
+  border: 1px solid #99C5DC;
+}
