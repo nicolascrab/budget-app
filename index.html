@@ -7,43 +7,47 @@
 	<title>Budget App</title>
 </head>
 <body>
-	<div style="margin-top: 20px;">
-  		<button type="button" id="sendTestDataBtn">Send Test Data to Apps Script</button>
-	</div>
 	<main>
-		<h1>Budget App</h1>	
+		<h1 class="heading_h1">Budget App</h1>	
+		<p class="heading_paragraph">This version will use method: 'POST' and body: 'FormData(form)'
+			<br>
+			and sends the data to <a href="https://docs.google.com/spreadsheets/d/18r0eMLwo42JgMSqXurQZxSuuGJEUFBUIkeVFal7XczQ/edit?gid=0#gid=0">v1 budget entry</a>
+			<br>
+			Currently I was just testing how to output my form data in the console log.</p>
 		<form class="form_flex">
 			<!--Date-->
 			<div class="form_input-flex">
 				<div class="form_label-wrapper">
-					<label for="event-date">Date</label>
+					<label for="date">Date</label>
+					<!--Prefill functionality is unavailable
 					<button class="form_custom-checkbox" data-js="todayBtn">Today</button>
-					<button class="form_custom-checkbox" data-js="yesterdayBtn">Yesterday</button>
+					<button class="form_custom-checkbox" data-js="yesterdayBtn">Yesterday</button>-->
 				</div>
 				<input class="form_input" type="date" id="date" name="Date">
 			</div>
 			<!--Description-->
 			<div class="form_input-flex">
 				<div class="form_label-wrapper">
-					<label for="event-date">Description</label>
+					<label for="description">Description</label>
+					<!-- Prefill functionality is unavailable
 					<button class="form_custom-checkbox" data-js="sparBtn">Spar</button>
-					<button class="form_custom-checkbox" data-js="lidlBtn">Lidl</button>
+					<button class="form_custom-checkbox" data-js="lidlBtn">Lidl</button> -->
 				</div>
 				<input class="form_input" type="text" id="description" name="Description" placeholder="Tap to enter a description">
 			</div>
 			<!--Amount-->
 			<div class="form_input-flex">
 				<div class="form_label-wrapper">
-					<label for="event-date">Amount</label>
+					<label for="amount">Amount</label>
 				</div>
 				<input class="form_input" type="number" id="amount" name="Amount" inputmode="decimal" placeholder="Tap to enter an amount">
 			</div>
 			<!--Categories-->
 			<div class="form_input-flex">
 				<div class="form_label-wrapper">
-					<label for="category-select">Category</label>
+					<label for="category">Category</label>
 				</div>
-				<select id="category-select" name="categorySelection">
+				<select id="category" name="Category">
 					<option value="">Tap to select a category</option>
 					<optgroup label="Revenues">
 						<option value="Groceries">Groceries</option>

@@ -85,6 +85,10 @@ select {
   padding: 0.5rem;
 }
 
+.heading_paragraph {
+  margin-bottom: 2em;
+}
+
 .form_flex {
   display: flex;
   flex-direction: column;
